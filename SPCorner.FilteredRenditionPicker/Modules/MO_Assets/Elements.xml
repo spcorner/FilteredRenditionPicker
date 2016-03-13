@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="MO_Assets" Url="Style Library/SPCorner" RootWebOnly="TRUE">
+    <File Path="MO_Assets\js\SPCorner.FilteredRenditionPicker.js" Url="js/SPCorner.FilteredRenditionPicker.js" 
+          ReplaceContent="TRUE" Type="GhostableInLibrary" IgnoreIfAlreadyExists="FALSE" Level="Published" />
+  </Module>
+</Elements>

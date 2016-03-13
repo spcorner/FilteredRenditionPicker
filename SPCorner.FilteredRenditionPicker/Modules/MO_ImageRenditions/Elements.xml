@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="MO_ImageRenditions">
+    <File Path="MO_ImageRenditions\PublishingImageRenditions.xml" Url="_catalogs/masterpage/PublishingImageRenditions.xml"
+          ReplaceContent="TRUE" Type="GhostableInLibrary" IgnoreIfAlreadyExists="FALSE" Level="Published" />
+  </Module>
+</Elements>

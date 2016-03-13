@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPCorner.FilteredRenditionPicker", "SPCorner.FilteredRenditionPicker\SPCorner.FilteredRenditionPicker.csproj", "{B7B9ECDD-6F4F-487B-B9A2-C92078FAE48C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Dev|Any CPU = Dev|Any CPU
+		Live|Any CPU = Live|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7B9ECDD-6F4F-487B-B9A2-C92078FAE48C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7B9ECDD-6F4F-487B-B9A2-C92078FAE48C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7B9ECDD-6F4F-487B-B9A2-C92078FAE48C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B7B9ECDD-6F4F-487B-B9A2-C92078FAE48C}.Dev|Any CPU.ActiveCfg = Dev|Any CPU
+		{B7B9ECDD-6F4F-487B-B9A2-C92078FAE48C}.Dev|Any CPU.Build.0 = Dev|Any CPU
+		{B7B9ECDD-6F4F-487B-B9A2-C92078FAE48C}.Dev|Any CPU.Deploy.0 = Dev|Any CPU
+		{B7B9ECDD-6F4F-487B-B9A2-C92078FAE48C}.Live|Any CPU.ActiveCfg = Live|Any CPU
+		{B7B9ECDD-6F4F-487B-B9A2-C92078FAE48C}.Live|Any CPU.Build.0 = Live|Any CPU
+		{B7B9ECDD-6F4F-487B-B9A2-C92078FAE48C}.Live|Any CPU.Deploy.0 = Live|Any CPU
+		{B7B9ECDD-6F4F-487B-B9A2-C92078FAE48C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7B9ECDD-6F4F-487B-B9A2-C92078FAE48C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7B9ECDD-6F4F-487B-B9A2-C92078FAE48C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

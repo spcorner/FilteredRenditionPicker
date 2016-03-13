@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="5046d892-c795-4b86-9065-25e54b255dcb" solutionId="59c024e2-9b27-460d-b3f4-2e4d171049c2" resetWebServer="false" title="SPCorner.FilteredRenditionPicker" sharePointProductVersion="15.0" name="SPCorner.FilteredRenditionPicker" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="a5ec41c2-5e0d-4885-8716-833f2abb8423" />
+  </features>
+</package>

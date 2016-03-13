@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction 
+    Id="Ribbon.Image.Image.Renditions.PickRenditionFiltered"
+    Location="CommandUI.Ribbon"
+    Sequence="140"
+    Title="Replace Rendition Picker with filtered">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition
+          Location="Ribbon.Image.Image.Renditions.PickRendition">
+          <FlyoutAnchor
+            Id="Ribbon.Image.Image.Renditions.PickRenditionFiltered"
+            Alt="$Resources:sp.publishing.Resources,CUI_ButPickImageRenditionAlt;"
+            Command="PickImageRendition"
+            Image16by16="/_layouts/15/images/publishing.png?rev=42" Image16by16Top="-224" Image16by16Left="-128"
+            Image32by32="/_layouts/15/images/publishing.png?rev=42" Image32by32Top="-128" Image32by32Left="-192"
+            ToolTipTitle="$Resources:sp.publishing.Resources,CUI_ButPickImageRendition;"
+            ToolTipDescription="$Resources:sp.publishing.Resources,CUI_ButPickImageRenditionTooltip;"
+            LabelText="$Resources:sp.publishing.Resources,CUI_ButPickImageRendition;"
+            PopulateDynamically="true"
+            PopulateOnlyOnce="false"
+            PopulateQueryCommand="GetFilteredImageRenditionsMenuXml"
+            Sequence="20"
+            TemplateAlias="o1">
+          </FlyoutAnchor>
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler
+          Command="GetFilteredImageRenditionsMenuXml"
+          CommandAction="javascript:SPCorner.FilteredRenditionPicker.InitRenditionsMenu.apply(this,arguments)" />
+      </CommandUIHandlers>
+    </CommandUIExtension>
+  </CustomAction>
+</Elements>
