@@ -10,14 +10,6 @@
 
 SPCorner = window.SPCorner || {};
 SPCorner.FilteredRenditionPicker = SPCorner.FilteredRenditionPicker || {};
-
-SPCorner.FilteredRenditionPicker.ShouldDisplayRendition = function (renditionObject) {
-    return !/^Rendition999/.exec(renditionObject.MenuItemId);
-
-    //Other criteria e.g. hide renditions with an _ prefix
-    //return (renditionObject.LabelText || "").indexOf("_") != 0;
-};
-
 SPCorner.FilteredRenditionPicker.InitRenditionsMenu = function (command, commandName, properties) {
     var MENU_ID = "Ribbon.Image.Image.Renditions.PickRenditionFiltered.Menu";
 
@@ -29,10 +21,8 @@ SPCorner.FilteredRenditionPicker.InitRenditionsMenu = function (command, command
     };
 
     if (RTE.Externals.imageRenditions && RTE.Externals.imageRenditions.Renditions.length > 0) {
-        var renditionItems = [];
-        for (var i = 0; i < RTE.Externals.imageRenditions.Renditions.length; i++) {
-            var rteRendition = RTE.Externals.imageRenditions.Renditions[i];
-            var renditionItem = {
+        var renditionItems = RTE.Externals.imageRenditions.Renditions.map(function (rteRendition) {
+            return {
                 name: "Button",
                 attrs: {
                     id: MENU_ID + ".Rendition.Item" + rteRendition.Id.toString(),
@@ -43,11 +33,12 @@ SPCorner.FilteredRenditionPicker.InitRenditionsMenu = function (command, command
                     Command: RTE.PublishingCommandNames.pickImageRenditionClick
                 }
             };
+        }).filter(function (renditionObject) {
+            return !/^Rendition999/.exec(renditionObject.attrs.MenuItemId);
 
-            if (SPCorner.FilteredRenditionPicker.ShouldDisplayRendition(renditionItem.attrs)) {
-                renditionItems.push(renditionItem);
-            }
-        }
+            //Other criteria e.g. hide renditions with an _ prefix
+            //return (renditionObject.LabelText || "").indexOf("_") != 0;
+        });
 
         var renditionItemsSection = {
             name: "MenuSection",
