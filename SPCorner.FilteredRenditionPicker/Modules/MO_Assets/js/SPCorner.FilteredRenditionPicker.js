@@ -2,8 +2,8 @@
 // Ideally this would go into an existing custom CSS file
 (function () {
     document.write("<style>" +
-        "table#renditions tr[id*='rendition999'], " +
-        "table#renditions tr[id*='rendition999'] + tr > td.ms-formline " +
+        "form[action*='ManageImageRenditions\.aspx'] table#renditions tr[id^='rendition999'], " +
+        "form[action*='ManageImageRenditions\.aspx'] table#renditions tr[id^='rendition999'] + tr > td.ms-formline " +
             "{ display:none; }" +
         "</style>");
 })();
