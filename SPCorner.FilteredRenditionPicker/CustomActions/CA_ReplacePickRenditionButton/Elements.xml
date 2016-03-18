@@ -4,7 +4,7 @@
     Id="Ribbon.Image.Image.Renditions.PickRenditionFiltered"
     Location="CommandUI.Ribbon"
     Sequence="140"
-    Title="Replace Rendition Picker with filtered">
+    Title="Replace default Rendition Picker with one that filters out options">
     <CommandUIExtension>
       <CommandUIDefinitions>
         <CommandUIDefinition

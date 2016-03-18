@@ -37,7 +37,7 @@ SPCorner.FilteredRenditionPicker.InitRenditionsMenu = function (command, command
             return !/^Rendition999/.exec(renditionObject.attrs.MenuItemId);
 
             //Other criteria e.g. hide renditions with an _ prefix
-            //return (renditionObject.LabelText || "").indexOf("_") != 0;
+            //return (renditionObject.attrs.LabelText || "").indexOf("_") != 0;
         });
 
         var renditionItemsSection = {
@@ -72,9 +72,10 @@ SPCorner.FilteredRenditionPicker.InitRenditionsMenu = function (command, command
         jsonMenu.children.push(editRenditionsSection);
     }
 
-    //Exit parameter will be used by the Ribbon to populate the flyout
+    //'Exit parameter' to be used by the Ribbon to populate the flyout
     properties.PopulationJSON = jsonMenu;
-    //Return true if there are populated items
-    return jsonMenu.children.length > 0;
+    
+    //The return value doesn't really matter
+    return true;
 }
 
